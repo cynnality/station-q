@@ -46,10 +46,7 @@ html {
 body {
     margin: 0;
 
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+    font-family: "Chivo Mono";
 
     color: var(--black);
     background: var(--off-white);
@@ -89,16 +86,19 @@ h3 {
 
 .site-header {
     background: var(--off-white);
-    border-bottom: 2px solid var(--black);
+    border: 2px solid var(--black);
+    margin-top: 12em;
+    margin-left: 8em;
+    width: max-content;
+    padding: 12px;
 }
 
 .header-inner {
-    width: min(1100px, 90%);
+    /* width: min(1100px, 90%); */
     margin: 0 auto;
 
     min-height: 40px;
 
-    display: flex;
     align-items: center;
     justify-content: space-between;
 
@@ -111,12 +111,11 @@ h3 {
 }
 
 .site-name {
-    font-size: 1.15rem;
-    font-weight: 700;
+    font-size: 32px;
 }
 
 .site-nav {
-    width: min(1100px, 90%);
+    /* width: min(1100px, 90%); */
     margin: 0 auto;
 
     min-height: 80px;
@@ -140,6 +139,20 @@ h3 {
    HERO
 ------------------------- */
 
+.theentrance {
+    width: fit-content;
+    padding: 18px;
+    margin: 12px 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.door {
+    border: 2px solid rgba(0, 0, 0, 0.425);
+    padding: 12px 22px;
+}
+
 .hero {
     padding: 100px 0 120px;
 }
@@ -147,8 +160,7 @@ h3 {
 .eyebrow {
     color: #000000;
 
-    font-size: 0.8rem;
-    font-weight: 500;
+    font-size: 18px;
 
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -168,11 +180,7 @@ h3 {
 }
 
 .hero-text {
-    max-width: 650px;
-
-    color: var(--gray);
-
-    font-size: 1.2rem;
+    font-size: 22px;
 }
 
 .hero-links {
