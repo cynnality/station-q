@@ -148,9 +148,28 @@ h3 {
     gap: 18px;
 }
 
+.doubledoors {
+    display: flex;
+    gap: 24px;
+}
+
 .door {
     border: 2px solid rgba(0, 0, 0, 0.425);
     padding: 12px 22px;
+}
+
+.socialslink {
+    width: 50%;
+}
+
+.knobs {
+    display: flex;
+    flex-direction: column;
+}
+
+.knobs a {
+    text-decoration: underline;
+    color: blue;
 }
 
 .hero {
