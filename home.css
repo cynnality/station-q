@@ -306,13 +306,19 @@ h3 {
 ------------------------- */
 
 .color-section {
-    padding: 100px 0;
+    padding: 38px;
+    max-width: 80%;
+    margin:auto;
+    display: flex;
 
     background: var(--yellow);
     color: var(--black);
 
-    border-top: 2px solid var(--black);
-    border-bottom: 2px solid var(--black);
+    border: 2px solid var(--black);
+}
+
+.color-section .right {
+    margin:auto;
 }
 
 .color-section h2 {
@@ -320,7 +326,7 @@ h3 {
 
     margin: 0 0 25px;
 
-    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-size: 32px;
 }
 
 .color-section p {
