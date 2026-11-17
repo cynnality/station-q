@@ -87,8 +87,6 @@ h3 {
 .site-header {
     background: var(--off-white);
     /* border: 2px solid var(--black); */
-    margin-top: 12em;
-    margin-left: 8em;
     width: max-content;
     padding: 12px;
 }
@@ -111,7 +109,8 @@ h3 {
 }
 
 .site-name {
-    font-size: 32px;
+    font-size: 48px;
+    font-weight: 600;
 }
 
 .site-nav {
@@ -310,15 +309,25 @@ h3 {
     max-width: 80%;
     margin:auto;
     display: flex;
+    text-align: center;
 
-    background: var(--yellow);
     color: var(--black);
 
     border: 2px solid var(--black);
 }
 
+
+
+.color-section .left {
+    background: var(--yellow);
+    padding: 24px;
+}
+
 .color-section .right {
     margin:auto;
+    display: grid;
+    align-items: center;
+    gap: 40px;
 }
 
 .color-section h2 {
@@ -333,6 +342,24 @@ h3 {
     max-width: 650px;
 
     font-size: 1.15rem;
+}
+
+.color-section a {
+    border-bottom: 2px solid transparent;
+    text-decoration: underline;
+    color: blue;
+}
+
+.color-section a:hover {
+    border-color: var(--blue);
+}
+
+.price {
+    background: white;
+    border: solid 2px #000000;
+    padding: 8px;
+    border-radius: 4px;
+
 }
 
 
