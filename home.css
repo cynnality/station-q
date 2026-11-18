@@ -86,14 +86,23 @@ h3 {
 
 .site-header {
     background: var(--off-white);
-    /* border: 2px solid var(--black); */
-    width: max-content;
+    display: flex;
+    gap: 12px;
     padding: 12px;
+}
+
+.header-disclaim {
+    max-width: 40%;
+    border: dotted 1px #000000;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header-inner {
     /* width: min(1100px, 90%); */
-    margin: 0 auto;
+    margin: 12px 24px;
 
     min-height: 40px;
 
