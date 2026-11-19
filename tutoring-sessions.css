@@ -1,0 +1,426 @@
+/* -------------------------
+   COLORS
+------------------------- */
+
+:root {
+    --blue: #184eff;
+    --orange: #ff0000;
+    --yellow: #ffd400;
+
+    --black: #151515;
+    --white: #ffffff;
+    --off-white: #f7f7f2;
+    --gray: #666666;
+
+    --border: #d8d8d2;
+
+    --dark-green: #0A432F;
+    --med-green: #229149;
+    --light-green: #53C659;
+    --pale-green: #B3D7A7;
+    --dark-plum: #430A1E;
+    --med-pink: #91226A;
+    --light-pink: #C653C0;
+    --pale-pink: #CBA7D7;
+    --muddy-green: #3B430A;
+    --muddy-ochre: #917E22;
+    --peach: #C69053;
+    --pale-peach: #D7B2A7;
+
+
+}
+
+
+/* -------------------------
+   RESET
+------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family: "Chivo Mono";
+
+    color: var(--black);
+    background: var(--off-white);
+
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+}
+
+
+/* -------------------------
+   GENERAL LAYOUT
+------------------------- */
+
+.page-width {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+
+/* -------------------------
+   HEADER
+------------------------- */
+
+.site-header {
+    background: var(--off-white);
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+}
+
+.header-disclaim {
+    max-width: 40%;
+    border: dotted 1px #000000;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-inner {
+    /* width: min(1100px, 90%); */
+    margin: 12px 24px;
+
+    min-height: 40px;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.header-inner .eyebrow {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.site-name {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.site-nav {
+    /* width: min(1100px, 90%); */
+    margin: 0 auto;
+
+    min-height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.site-nav a {
+    border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover {
+    border-color: var(--blue);
+}
+
+
+/* -------------------------
+   HERO
+------------------------- */
+
+.theentrance {
+    width: fit-content;
+    padding: 18px;
+    margin: 12px 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.doubledoors {
+    display: flex;
+    gap: 24px;
+}
+
+.door {
+    border: 2px solid rgba(0, 0, 0, 0.425);
+    padding: 12px 22px;
+}
+
+.socialslink {
+    width: 50%;
+}
+
+.knobs {
+    display: flex;
+    flex-direction: column;
+}
+
+.knobs a {
+    text-decoration: underline;
+    color: blue;
+}
+
+.hero {
+    padding: 100px 0 120px;
+}
+
+.eyebrow {
+    color: #000000;
+    border-top: dotted 1.5px #000000;
+    font-size: 18px;
+
+    letter-spacing: 0.12em;
+
+    margin: 12px 8px;
+    padding: 12px 8px;
+}
+
+.hero h1 {
+    max-width: 850px;
+
+    margin: 0 0 30px;
+
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    font-weight: 700;
+
+    letter-spacing: -0.05em;
+}
+
+.hero-text {
+    font-size: 22px;
+}
+
+.hero-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+
+/* -------------------------
+   BUTTONS
+------------------------- */
+
+.button {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background: var(--blue);
+    color: var(--white);
+
+    border: 2px solid var(--blue);
+
+    font-weight: 600;
+}
+
+.button:hover {
+    background: var(--black);
+    border-color: var(--black);
+}
+
+.text-link {
+    font-weight: 600;
+}
+
+.text-link:hover {
+    color: var(--blue);
+}
+
+
+/* -------------------------
+   INTRO / SERVICES
+------------------------- */
+
+.intro {
+    padding: 80px 0;
+
+    border-top: 2px solid var(--black);
+}
+
+.intro h2,
+.contact-section h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+
+    margin: 0 0 45px;
+}
+
+.card-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+    min-height: 280px;
+
+    padding: 25px;
+
+    background: var(--white);
+
+    border: 2px solid var(--black);
+}
+
+.card-number {
+    display: block;
+
+    color: var(--orange);
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    margin-bottom: 60px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: var(--gray);
+}
+
+
+/* -------------------------
+   COLOR SECTION
+------------------------- */
+
+.color-section {
+    padding: 38px;
+    max-width: 80%;
+    margin:auto;
+    display: flex;
+    text-align: center;
+
+    color: var(--black);
+
+    border: 2px solid var(--black);
+}
+
+
+
+.color-section .left {
+    background: var(--light-green);
+    padding: 24px;
+}
+
+.color-section .right {
+    margin:auto;
+    display: grid;
+    align-items: center;
+    gap: 40px;
+}
+
+.color-section h2 {
+    max-width: 750px;
+
+    margin: 0 0 25px;
+
+    font-size: 32px;
+}
+
+.color-section p {
+    max-width: 650px;
+
+    font-size: 1.15rem;
+}
+
+.color-section a {
+    border-bottom: 2px solid transparent;
+    text-decoration: underline;
+    color: blue;
+}
+
+.color-section a:hover {
+    border-color: var(--blue);
+}
+
+.price {
+    background: white;
+    border: solid 2px #000000;
+    padding: 8px;
+    border-radius: 4px;
+
+}
+
+
+/* -------------------------
+   CONTACT
+------------------------- */
+
+
+
+/* -------------------------
+   FOOTER
+------------------------- */
+
+
+
+/* -------------------------
+   MOBILE
+------------------------- */
+
+@media (max-width: 750px) {
+
+    .header-inner {
+        padding: 20px 0;
+
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .site-nav {
+        flex-wrap: wrap;
+        gap: 10px 20px;
+    }
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        min-height: auto;
+    }
+
+    .card-number {
+        margin-bottom: 35px;
+    }
+
+    .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
