@@ -363,20 +363,25 @@ h3 {
     border-color: var(--blue);
 }
 
+.sessions {
+    
+}
+
+
+
+/* -------------------------
+   meet the tutors
+------------------------- */
+.meet-the-tutors-link {
+    font-size: 22px;
+}
+
 .price {
     background: white;
     border: solid 2px #000000;
     padding: 8px;
     border-radius: 4px;
-
 }
-
-
-/* -------------------------
-   CONTACT
-------------------------- */
-
-
 
 /* -------------------------
    FOOTER
